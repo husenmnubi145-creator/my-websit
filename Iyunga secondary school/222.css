@@ -1,0 +1,87 @@
+/* Heading ya Taifa */
+.gov-header {
+  text-align: center;
+  background: #004080;
+  color: white;
+  padding: 15px;
+  border-bottom: 5px solid yellow;
+  box-shadow: 0 0 20px cyan;
+}
+.gov-header .logo {
+  height: 80px;       /* ukubwa wa nembo */
+  margin: 10px;       /* nafasi kati ya maandishi na nembo */
+}
+.gov-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.gov-header h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.gov-header h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+/* Heading ya Shule yenye motion */
+.moving-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: yellow;
+  text-shadow: 0 0 15px cyan;
+  animation: bounceGlow 2s infinite;
+}
+
+@keyframes bounceGlow {
+  0%   { transform: translateY(0); text-shadow: 0 0 10px cyan; }
+  50%  { transform: translateY(-15px); text-shadow: 0 0 25px lime; }
+  100% { transform: translateY(0); text-shadow: 0 0 10px magenta; }
+}
+
+/* Navigation Bar */
+nav {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 0 20px cyan;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column; /* icon juu, text chini */
+  align-items: center;
+  transition: 0.3s;
+}
+
+nav a i {
+  font-size: 22px;
+  color: yellow;
+  margin-bottom: 5px;
+}
+
+nav a:hover {
+  color: lime;
+  text-shadow: 0 0 10px lime;
+  transform: translateY(-5px);
+}
+
+nav a:hover i {
+  color: lime;
+  text-shadow: 0 0 10px lime;
+}

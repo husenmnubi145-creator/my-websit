@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #d0d7e4;
+  color: #ffffff;
+  padding-top: 60px; /* Space for fixed notification bar */
+}
+
+/* Fixed Top Notification / Navigation Bar */
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1a2332;
+  border-bottom: 2px solid #2563eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.motto {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Hero & Moving Text Animation */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgba(67, 69, 71, 0.1);
+  padding: 15px 0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+
+/* Keyframes for Continuous Scrolling */
+@keyframes marquee {                              
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.subtitle {
+  color: #16202e;
+  font-size: 1.1rem;
+}
+
+/* General Sections */
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #60a5fa;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-size: 0.85rem;
+}

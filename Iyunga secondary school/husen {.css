@@ -1,0 +1,41 @@
+/* 🌟 Navigation Bar with Icons Above Text */
+nav {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 0 20px cyan;
+  position: sticky;   /* stays at top */
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;       /* smaller text under icon */
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column; /* stack icon above text */
+  align-items: center;
+}
+
+nav a i {
+  font-size: 22px;       /* bigger icon */
+  color: yellow;
+  margin-bottom: 5px;    /* space between icon and text */
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: lime;
+  text-shadow: 0 0 10px lime;
+}
+
+nav a:hover i {
+  color: lime;
+  text-shadow: 0 0 10px lime;
+}

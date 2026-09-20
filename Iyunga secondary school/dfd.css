@@ -1,0 +1,170 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0f141d;
+  color: #ffffff;
+  padding-top: 60px;
+}
+
+/* Fixed Navigation Bar */
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1a2332;
+  border-bottom: 2px solid #2563eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.motto {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.nav-links i {
+  margin-right: 6px;
+}
+
+/* Moving Text Banner */
+.hero {
+  padding: 50px 20px 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  padding: 15px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.moving-text {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #ffffff;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* General Content Sections */
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #161f2e;
+  border-radius: 8px;
+}
+
+.section h2 {
+  color: #60a5fa;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.section h2 i {
+  margin-right: 8px;
+}
+
+/* Services List */
+.services-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.services-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #243144;
+  color: #cbd5e1;
+}
+
+.services-list li i {
+  color: #60a5fa;
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* Contact Details */
+.contact-details p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+.contact-details i {
+  color: #60a5fa;
+  margin-right: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #64748b;
+  font-size: 0.85rem;
+}
